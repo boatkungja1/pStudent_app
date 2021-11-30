@@ -29,7 +29,7 @@ data = {
 
 df = pd.DataFrame(data, index=[0])
 
-st.header('Application of Abalone\'s Age Prediction:')
+
 st.subheader('User Input:')
 st.write(df)
 
