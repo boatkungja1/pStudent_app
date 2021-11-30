@@ -54,15 +54,15 @@ st.write(X_new)
 import pickle
 load_nor = pickle.load(open('nms.pkl', 'rb'))
 
-# X_new = load_nor.transform(X_new)
+X_new = load_nor.transform(X_new)
 
 st.subheader('Normalized Input:')
 st.write(X_new)
 
 
 load_knn = pickle.load(open('best_knn.pkl', 'rb'))
-# prediction = load_knn.predict(X_new)
+prediction = load_knn.predict(X_new)
 
 st.subheader('Prediction:')
-# st.write(prediction)
+st.write(prediction)
 
